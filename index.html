@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <title>Touch Nums</title>
+</head>
+
+<body onload="init()">
+
+    <div class="container">
+
+        <h1>TOUCH THE NUMS</h1>
+
+        <div class="bar">
+            <div class="easy btn" onclick="getGameLevel(16)">EASY</div>
+            <div class="med btn" onclick="getGameLevel(25)">MEDIUM</div>
+            <div class="hard btn" onclick="getGameLevel(36)">HARD</div>
+        </div>
+
+        <div class="bar">
+            <div class="time btn">0</div>
+            <div class="start btn" onclick="init()">NEW GAME</div>
+            <div class="next btn">NEXT NUM: 0</div>
+        </div>
+
+        <table>
+            <tbody class="board"> </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
